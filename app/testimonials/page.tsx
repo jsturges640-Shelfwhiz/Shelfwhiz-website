@@ -14,11 +14,11 @@ const Star = ({ className }: { className?: string }) => (
 const testimonials = [
   {
     id: 1,
-    name: "Jere Holder",
-    company: "MegaWarehouse Solutions",
+    name: "Jimmy G",
+    company: "Dallas, TX",
     role: "Operations Manager",
     content:
-      "ShelfWhiz transformed our inventory setup process. What used to take us 3 days now takes just over a day. The efficiency gains are remarkable.",
+      "Shelwhiz Mapping program revolutionizes inventory execution. By streamlining the process and eliminating unnecessary product movement, it delivers unmatched efficiency and cost savings.",
     rating: 5,
     image: "/professional-man-warehouse-manager.jpg",
   },
@@ -28,7 +28,7 @@ const testimonials = [
     company: "Rancho Cucamonga, CA",
     role: "Regional Sales Manager",
     content:
-      "Since August 2024, I’ve relied on the Shelfwhiz shelf layout program for warehouse product set-ups, and by October 2025, it’s become indispensable. Previously, my team offloaded products from pallets onto the warehouse floor in numerical sequence—a process that was unproductive, time-consuming, space-intensive, and physically taxing. When I first heard about Shelfwhiz, I was skeptical it would work. However, after placing stickers on shelves to guide product placement, I was amazed at how it streamlined the process. Products went straight from pallets to shelves, saving significant time. I’ve used it at multiple warehouses, including two setups in San Marcos, California, where employees remarked on my ability to set up multiple pallets in just a few hours, recalling my prior success with the system. Shelfwhiz™ has transformed my warehouse setup experience into a highly efficient and productive process.",
+      "Since August 2024, I’ve relied on the Shelfwhiz shelf layout program for warehouse product set-ups, and by October 2025, it’s become indispensable. Previously, my team offloaded products from pallets onto the warehouse floor in numerical sequence—a process that was unproductive, time-consuming, space-intensive, and physically taxing. When I first heard about Shelfwhiz, I was skeptical it would work. However, after placing stickers on shelves to guide product placement, I was amazed at how it streamlined the process. Products went straight from pallets to shelves, saving significant time. I’ve used it at multiple warehouses, including two setups in San Marcos, California, where employees remarked on my ability to set up multiple pallets in just a few hours, recalling my prior success with the system. Shelfwhiz has transformed my warehouse setup experience into a highly efficient and productive process.",
     rating: 5,
     image: "/professional-man-logistics-director.jpg",
   },
@@ -38,16 +38,16 @@ const testimonials = [
     company: "Massachusetts.",
     role: "Sales Specialist",
     content:
-      "ShelfWhiz made our changeovers seamless. The pre-planned SKU placement & shelf layout is genius, I'll never do another changeover without it.",
+      "Shelfwhiz made our changeovers seamless. The pre-planned SKU placement & shelf layout is genius, I'll never do another changeover without it.",
     rating: 5,
     image: "/professional-woman-inventory-specialist.jpg",
   },
   {
     id: 4,
-    name: "Jim G",
-    company: "Dallas, TX",
-    role: "Director, Stratigic Accounts",
-    content: "Simply Amazing",
+    name: "Jere Holder",
+    company: "Sparta,TN",
+    role: "Operations Manager",
+    content: "Amazing",
     rating: 5,
     image: "/professional-placeholder.jpg",
   },
@@ -104,11 +104,11 @@ const TestimonialCard = ({ content, name, company, role, rating, id }: (typeof t
       >
         "{content}"
       </blockquote>
-    </div>
-    <div>
-      <p className="font-semibold text-gray-900">{name}</p>
-      <p className="text-sm text-blue-600">{role}</p>
-      <p className="text-sm text-gray-500">{company}</p>
+      <div>
+        <p className="font-semibold text-gray-900">{name}</p>
+        <p className="text-sm text-blue-600">{role}</p>
+        <p className="text-sm text-gray-500">{company}</p>
+      </div>
     </div>
   </div>
 );
@@ -128,20 +128,20 @@ const TestimonialCardFeatured = ({ content, name, company, role, rating }: (type
       >
         "{content}"
       </blockquote>
-    </div>
-    <div>
-      <p className="font-semibold text-gray-900">{name}</p>
-      <p className="text-sm text-blue-600">{role}</p>
-      <p className="text-sm text-gray-500">{company}</p>
+      <div>
+        <p className="font-semibold text-gray-900">{name}</p>
+        <p className="text-sm text-blue-600">{role}</p>
+        <p className="text-sm text-gray-500">{company}</p>
+      </div>
     </div>
   </div>
 );
 
 export default function TestimonialsPage() {
   return (
-    <main className="pt-48 pb-20 px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'calc(12rem + env(safe-area-inset-top, 80px))' }}>
+    <main className="pt-24 pb-20 px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'calc(6rem + env(safe-area-inset-top, 80px))' }}>
       {/* Hero/Header Section */}
-      <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-white to-blue-50 overflow-hidden text-center">
+      <section className="relative pt-16 pb-20 md:pt-20 md:pb-24 bg-gradient-to-br from-white to-blue-50 overflow-hidden text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-4 block">
             PROVEN RESULTS
