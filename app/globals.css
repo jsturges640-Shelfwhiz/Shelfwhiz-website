@@ -166,3 +166,37 @@
 .animation-delay-300 {
   animation-delay: 0.3s;
 }
+
+/* Media query for desktop horizontal navigation */
+@media (min-width: 640px) {
+  .flex-col {
+    flex-direction: row;
+  }
+  .space-y-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .space-x-6 {
+    margin-left: 1.5rem;
+  }
+  .items-start {
+    align-items: center;
+  }
+  .mb-2 {
+    margin-bottom: 0;
+  }
+  .w-full {
+    width: auto;
+  }
+}
+
+/* Media query for mobile button size and portrait padding */
+@media (max-width: 639px) {
+  .bg-blue-600 {
+    width: 50% !important;
+    margin: 0 auto;
+  }
+  .pt-48 {
+    padding-top: calc(14rem + env(safe-area-inset-top, 100px)) !important;
+  }
+}

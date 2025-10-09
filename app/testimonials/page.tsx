@@ -124,7 +124,7 @@ const TestimonialCardFeatured = ({ content, name, company, role, rating }: (type
         ))}
       </div>
       <blockquote
-        className="text-gray-700 italic mb-6 text-lg leading-relaxed max-h-[300px] overflow-y-auto"
+        className="text-gray-700 italic mb-6 text-lg leading-relaxed"
       >
         "{content}"
       </blockquote>
@@ -139,7 +139,7 @@ const TestimonialCardFeatured = ({ content, name, company, role, rating }: (type
 
 export default function TestimonialsPage() {
   return (
-    <main className="pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+    <main className="pt-48 pb-20 px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'calc(12rem + env(safe-area-inset-top, 80px))' }}>
       {/* Hero/Header Section */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 bg-gradient-to-br from-white to-blue-50 overflow-hidden text-center">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
