@@ -16,7 +16,7 @@ const testimonials = [
     id: 1,
     name: "Jimmy G",
     company: "Dallas, TX",
-    role: "Operations Manager",
+    role: "Director, Stratigic Accounts",
     content:
       "Shelwhiz Mapping program revolutionizes inventory execution. By streamlining the process and eliminating unnecessary product movement, it delivers unmatched efficiency and cost savings.",
     rating: 5,
