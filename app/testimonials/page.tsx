@@ -38,7 +38,7 @@ const testimonials = [
     company: "Massachusetts.",
     role: "Sales Specialist",
     content:
-      "ShelfWhiz made our changeovers seamless. The pre-planned SKU placement & shelf layout is a genius, I'll never do another changeover without it.",
+      "ShelfWhiz made our changeovers seamless. The pre-planned SKU placement & shelf layout is genius, I'll never do another changeover without it.",
     rating: 5,
     image: "/professional-woman-inventory-specialist.jpg",
   },
