@@ -34,7 +34,7 @@ export default function DocumentsPage() {
             }}
           />
           <p className="text-sm text-gray-500 mt-4">
-            * Disclaimer- In order to achieve the ideal results, Shelfwhiz accuracy is dependedent on the inventory, Vendor Box data, and Customer shelf date to be correct. Contact us at{" "}
+            * Disclaimer - The accuracy of Shelfwhiz can only be guaranteed if the underlying data—including inventory quantities, vendor box information, and customer shelf details—is correct. Contact us at{" "}
             <a href="mailto:info.shelfwhiz@gmail.com" className="text-blue-600 hover:underline">
               info.shelfwhiz@gmail.com
             </a>{" "}
