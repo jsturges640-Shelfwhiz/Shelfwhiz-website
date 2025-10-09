@@ -18,7 +18,7 @@ const testimonials = [
     company: "Dallas, TX",
     role: "Director, Stratigic Accounts",
     content:
-      "Shelwhiz Mapping program revolutionizes inventory execution. By streamlining the process and eliminating unnecessary product movement, it delivers unmatched efficiency and cost savings.",
+      "Shelfwhiz Mapping program revolutionizes inventory execution. By streamlining the process and eliminating unnecessary product movement, it delivers unmatched efficiency and cost savings.",
     rating: 5,
     image: "/professional-man-warehouse-manager.jpg",
   },
