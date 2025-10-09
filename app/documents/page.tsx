@@ -18,7 +18,7 @@ export default function DocumentsPage() {
         <div className="bg-blue-50 p-12 rounded-xl shadow-lg border border-blue-200" style={{ paddingBottom: '40px' }}>
           <h2 className="text-3xl font-bold text-blue-800 mb-4">Layout Example</h2>
           <p className="text-lg text-gray-700 mb-6">
-            Below is an example of a ShelfWhiz™ layout. This shows how our system organizes each SKU, shelves, and dimensions for Simplified Setups. 
+            Below is an example of a ShelfWhiz™ layout. Our system orgranizes every SKU on every shelf into a Simplified Setup. 
           </p>
           <img
             src="/documents/Layout Example.bmp"
