@@ -1,23 +1,16 @@
 "use client";
+
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 
-// Using yellow-500 for the star color to make them stand out
+// Simple SVG icon components
 const Star = ({ className }: { className?: string }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className={`w-5 h-5 text-yellow-500 ${className}`} // Stars are yellow-500
-  >
-    <path
-      fillRule="evenodd"
-      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z"
-      clipRule="evenodd"
-    />
+  <svg className={className} fill="currentColor" viewBox="0 0 20 20">
+    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1h3.461a1 1 0 00.951-.69l1.07-3.292z" />
   </svg>
 );
-// Sample Testimonial Data (Data array remains unchanged)
+
+// Sample Testimonial Data
 const testimonials = [
   {
     id: 3,
@@ -96,160 +89,130 @@ const testimonials = [
   },
 ];
 
-// Testimonial Card (Standard)
 const TestimonialCard = ({ content, name, company, role, rating, id }: (typeof testimonials)[0]) => (
-  <Card key={id} className="shadow-lg border-t-4 border-blue-500 hover:shadow-xl transition-shadow">
-    <CardContent className="p-6 space-y-4">
-      <div className="flex">
+  <div
+    className={`bg-white rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between py-4 px-6 min-h-[200px] hover:shadow-xl transition-all duration-300`}
+  >
+    <div>
+      <div className="flex mb-4">
         {[...Array(rating)].map((_, i) => (
-          <Star key={i} />
+          <Star key={i} className="w-5 h-5 text-yellow-400" />
         ))}
       </div>
-
-      <blockquote className="text-gray-600 italic">
+      <blockquote
+        className="text-gray-700 italic mb-6 text-base leading-relaxed"
+      >
         "{content}"
       </blockquote>
-
-      <div className="pt-2 border-t border-gray-200">
+      <div>
         <p className="font-semibold text-gray-900">{name}</p>
-        {/* Changed text-gray-500 to text-blue-600 */}
-        <p className="text-sm text-blue-600">{role}</p> 
-        <p className="text-xs text-gray-400">{company}</p>
+        <p className="text-sm text-blue-600">{role}</p>
+        <p className="text-sm text-gray-500">{company}</p>
       </div>
-
-    </CardContent>
-
-  </Card>
+    </div>
+  </div>
 );
 
-// Featured Testimonial Card (id 2)
 const TestimonialCardFeatured = ({ content, name, company, role, rating }: (typeof testimonials)[0]) => (
-  <Card className="col-span-1 md:col-span-3 bg-white shadow-lg border-t-4 border-blue-500 rounded-xl">
-    <CardContent className="p-6 space-y-4 flex flex-col md:flex-row items-start md:items-center">
-      
-      {/* Stars Section */}
-      <div className="flex-shrink-0 flex mb-4 md:mb-0 md:mr-6">
+  <div
+    className="bg-white rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between p-6 w-full md:w-3/4 lg:w-2/3 mx-auto hover:shadow-xl transition-all duration-300"
+  >
+    <div>
+      <div className="flex mb-4">
         {[...Array(rating)].map((_, i) => (
-          <Star key={i} />
+          <Star key={i} className="w-5 h-5 text-yellow-400" />
         ))}
       </div>
-
-      {/* Blockquote Content */}
-      <div className="flex-grow">
-        <blockquote className="text-gray-600 italic">
-          "{content}"
-        </blockquote>
-      </div>
-
-      {/* Name/Role/Company Section */}
-      <div className="pt-2 md:pt-0 md:pl-6 md:border-l md:border-gray-200">
+      <blockquote
+        className="text-gray-700 italic mb-6 text-lg leading-relaxed"
+      >
+        "{content}"
+      </blockquote>
+      <div>
         <p className="font-semibold text-gray-900">{name}</p>
-        {/* Changed text-gray-500 to text-blue-600 */}
-        <p className="text-sm text-blue-600">{role}</p> 
-        <p className="text-xs text-gray-400">{company}</p>
+        <p className="text-sm text-blue-600">{role}</p>
+        <p className="text-sm text-gray-500">{company}</p>
       </div>
-
-    </CardContent>
-
-  </Card>
+    </div>
+  </div>
 );
 
 export default function TestimonialsPage() {
-
-  // 1. Define the custom order of IDs for the grid 
-  const customOrderIds = [1, 5, 8, 3, 4, 6, 7];
-
-  // 2. Filter and map testimonials based on the custom order
-  const orderedTestimonials = customOrderIds
-    .map(id => testimonials.find(t => t.id === id))
-    .filter((t): t is (typeof testimonials)[0] => t !== undefined);
-
-  // 3. Find the featured testimonial (id 2)
-  const featuredTestimonial = testimonials.find(t => t.id === 2);
-
   return (
-    <div className="min-h-screen bg-gray-50">
-
+    <main className="pt-24 pb-20 px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'calc(6rem + env(safe-area-inset-top, 80px))' }}>
       {/* Hero/Header Section */}
-      <div className="bg-white py-20 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-sm font-semibold text-blue-600 uppercase tracking-wider">
+      <section className="relative pt-16 pb-20 md:pt-20 md:pb-24 bg-gradient-to-br from-white to-blue-50 overflow-hidden text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <span className="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-4 block">
             PROVEN RESULTS
-          </p>
-          <h1 className="mt-2 text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl lg:text-6xl">
-            Client Success Stories
-            and Warehouse Transformation
+          </span>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight mx-auto text-center max-w-2xl">
+            <span className="block">Client Success Stories</span>
+            <span className="block">and Warehouse Transformation</span>
           </h1>
-
-          <p className="mt-6 max-w-3xl mx-auto text-xl text-gray-500">
-            Read how **ShelfWhiz™** has helped leading businesses, and reps achieve unprecedented efficiency, cut changeover times, and maximize labor utilization.
+          <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto text-center">
+            Read how ShelfWhiz™ has helped leading businesses, and reps achieve unprecedented efficiency, cut changeover times, and maximize labor utilization.
           </p>
-
         </div>
+      </section>
 
-      </div>
-      {/* Testimonials Section (Layout logic remains the same) */}
-      <section className="py-16 sm:py-24">
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
           {/* Featured Testimonial (id: 2) */}
           <div className="mb-12">
-            {featuredTestimonial && (
-              <TestimonialCardFeatured {...featuredTestimonial} />
-            )}
+            {testimonials
+              .filter((testimonial) => testimonial.id === 2)
+              .map((testimonial) => (
+                <TestimonialCardFeatured key={testimonial.id} {...testimonial} />
+              ))}
           </div>
-
-
           {/* Grid for Other Testimonials */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {orderedTestimonials
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials
+              .filter((testimonial) => testimonial.id !== 2)
+              .sort((a, b) => {
+                if (a.id === 3) return -1; // Place id 3 first
+                if (b.id === 3) return 1;
+                return a.id - b.id; // Sort remaining by id
+              })
               .map((testimonial, index) => (
-                <div
-                  key={testimonial.id}
-                  className={testimonial.id === 3 ? "col-span-1 md:col-span-3" : "col-span-1"}
-                >
+                <div key={index}>
                   <TestimonialCard {...testimonial} />
                 </div>
               ))}
           </div>
-
-
         </div>
-
       </section>
-      {/* CTA Section - Blue Background */}
-      <section className="bg-blue-600">
 
-        <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-          <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-            <span className="block">Ready to Join Our Success Stories?</span>
-            <span className="block text-blue-200">Transform your warehouse setups with ShelfWhiz™ and become our next success story.</span>
-          </h2>
-
-          <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-            <div className="inline-flex rounded-md shadow">
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
-              >
-                Get Started Today
-              </Link>
-            </div>
+      {/* CTA Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600" id="contact">
+        <div className="max-w-4xl mx-auto text-center">
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-6">
+              Ready to Join Our Success Stories?
+            </h2>
+            <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+              Transform your warehouse setups with ShelfWhiz™ and become our next success story.
+            </p>
+            <Link
+              href="/#contact"
+              className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition inline-flex items-center hover:scale-105 transform shadow-lg"
+            >
+              Get Started Today
+            </Link>
           </div>
-
         </div>
-
       </section>
 
-      <footer className="py-6 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Link href="/" className="text-sm font-medium text-gray-500 hover:text-gray-900">
-            Back to Home
-          </Link>
-        </div>
-      </footer>
-
-    </div>
-
+      <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 pb-8">
+        <Link
+          href="/"
+          className="inline-block text-blue-600 hover:text-blue-700 font-medium transition"
+        >
+          Back to Home
+        </Link>
+      </div>
+    </main>
   );
 }
