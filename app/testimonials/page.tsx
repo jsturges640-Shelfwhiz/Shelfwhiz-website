@@ -60,9 +60,9 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "Eddie F",
-    company: "Fresno, CA",
-    role: "Regional Sales Manager",
+    name: "Mevo Mike",
+    company: "Chattanooga, TN",
+    role: "National Support Specialist Mgr",
     content: "Brilliant",
     rating: 5,
     image: "/professional-placeholder.jpg",
