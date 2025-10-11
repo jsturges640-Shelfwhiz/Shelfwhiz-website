@@ -63,7 +63,7 @@ const testimonials = [
     name: "Mevo Mike",
     company: "Chattanooga, TN",
     role: "National Support Specialist Mgr",
-    content: "Brilliant",
+    content: "I had the pleasure of working with John on a change over, this system saves so much time by calculating every parameter possible in a changeover. This becomes a very beneficiary when people have to come in from out of town to perform a changeover. The old phrase “time is money “ is very well demonstrated here.",
     rating: 5,
     image: "/professional-placeholder.jpg",
   },
