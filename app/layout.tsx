@@ -69,7 +69,7 @@ export default function RootLayout({
         </main>
         <footer className="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
-            <p className="text-gray-400">Streamlining changeovers since 2021</p>
+            <p className="text-gray-400">Streamlining Changeovers Since 2021</p>
             <p className="text-gray-400 text-sm mt-2">
               &copy; 2025 ShelfWhiz™. All rights reserved.
             </p>
