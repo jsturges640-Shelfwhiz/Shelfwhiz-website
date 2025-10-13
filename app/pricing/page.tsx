@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Pricing - ShelfWhiz™",
+  title: "Pricing - ShelfWhiz",
   description: "View ShelfWhiz pricing models and contact us for a custom quote.",
 };
 
@@ -23,7 +23,7 @@ export default function PricingPage() {
             Get a Custom Quote
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            ShelfWhiz™ will layout the entire line by SKU, and shelf, send a detailed file along with our Whizset™ label deck. We can also print & ship the labels if required at an additional cost.
+            ShelfWhiz will layout the entire line by SKU, and shelf, send a detailed file along with our Whizset™ label deck. We can also print & ship the labels if required at an additional cost.
           </p>
           <a
             href="mailto:info.shelfwhiz@gmail.com?subject=Price%20Quote%20Request"
@@ -34,7 +34,7 @@ export default function PricingPage() {
         </div>
 
         <p className="text-md text-gray-500 mt-12">
-          Shelfwhiz™ Dana Point, CA 92629
+          Shelfwhiz Dana Point, CA 92629
         </p>
         <Link
           href="/"

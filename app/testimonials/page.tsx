@@ -182,7 +182,7 @@ export default function TestimonialsPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl mx-auto text-xl text-gray-500">
-            Read how **ShelfWhiz™** has helped leading businesses, and reps achieve unprecedented efficiency, cut changeover times, and maximize labor utilization.
+            Read how **ShelfWhiz ** has helped leading businesses, and reps achieve unprecedented efficiency, cut changeover times, and maximize labor utilization.
           </p>
 
         </div>
@@ -223,7 +223,7 @@ export default function TestimonialsPage() {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             <span className="block">Ready to Join Our Success Stories?</span>
-            <span className="block text-blue-200">Transform your warehouse setups with ShelfWhiz™ and become our next success story.</span>
+            <span className="block text-blue-200">Transform your warehouse setups with ShelfWhiz and become our next success story.</span>
           </h2>
 
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">

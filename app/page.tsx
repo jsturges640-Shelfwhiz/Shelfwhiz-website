@@ -78,7 +78,7 @@ export default function HomePage() {
                 Accelerate Setups, Changeovers, or Expansions by 40% or more
               </h1>
               <p className="text-lg text-gray-600 mb-8 text-pretty">
-                ShelfWhiz™ accelerates inventory setups, changeovers, reboxes, and line expansions by identifying optimal
+                ShelfWhiz accelerates inventory setups, changeovers, reboxes, and line expansions by identifying optimal
                 SKU placement ahead of time, reducing labor requirements and improving efficiency.
               </p>
               <Link
@@ -147,9 +147,9 @@ export default function HomePage() {
       <section id="gallery" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in-up">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">ShelfWhiz™ in Action</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">ShelfWhiz in Action</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">
-              Transform your shelf dimensions, vendor box data, and inventory into a precise, actionable layout with ShelfWhiz™
+              Transform your shelf dimensions, vendor box data, and inventory into a precise, actionable layout with ShelfWhiz
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -187,7 +187,7 @@ export default function HomePage() {
               <h2 className="text-3xl font-bold text-blue-800 mb-4">Layout Example</h2>
             </div>
             <p className="text-lg text-gray-700 mb-6">
-              Below is an example of a ShelfWhiz™ layout. Our system organizes every SKU on every shelf into a Simplified Setup.
+              Below is an example of a ShelfWhiz layout. Our system organizes every SKU on every shelf into a Simplified Setup.
             </p>
             <Image
               src="/documents/Layout Example.bmp"
@@ -219,7 +219,7 @@ export default function HomePage() {
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">
-              To unlock faster warehouse setups- Contact us to find out how ShelfWhiz™ can streamline your next changeover or store setup.
+              To unlock faster warehouse setups- Contact us to find out how ShelfWhiz can streamline your next changeover or store setup.
             </p>
           </div>
           <div className="max-w-2xl mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-in-up">

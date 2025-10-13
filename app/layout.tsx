@@ -6,7 +6,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ShelfWhiz™ - Smart Warehouse Changeover Solution",
+  title: "ShelfWhiz - Smart Warehouse Changeover Solution",
   description:
     "Maximize warehouse efficiency and minimize effort with ShelfWhiz. Accelerate inventory setups, changeovers, and line expansions with optimal SKU placement and AI-driven planning.",
   generator: "v0.app",
@@ -71,7 +71,7 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-gray-400">Streamlining Changeovers Since 2021</p>
             <p className="text-gray-400 text-sm mt-2">
-              &copy; 2025 ShelfWhiz™. All rights reserved.
+              &copy; 2025 ShelfWhiz. All rights reserved.
             </p>
           </div>
         </footer>
