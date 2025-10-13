@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react"; // Added to ensure JSX support
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -180,6 +180,35 @@ export default function HomePage() {
                 className="w-full h-96 object-cover"
               />
             </div>
+          </div>
+          {/* Added Layout Example with centered heading and left-aligned text */}
+          <div className="mt-12 bg-blue-50 p-12 rounded-xl shadow-lg border border-blue-200" style={{ paddingBottom: '40px' }}>
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-blue-800 mb-4">Layout Example</h2>
+            </div>
+            <p className="text-lg text-gray-700 mb-6">
+              Below is an example of a ShelfWhiz™ layout. Our system organizes every SKU on every shelf into a Simplified Setup.
+            </p>
+            <Image
+              src="/documents/Layout Example.bmp"
+              alt="Layout Example"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-contain"
+              onError={(e) => {
+                const errorDiv = document.createElement("div");
+                errorDiv.textContent = "Error loading image. Please ensure the file exists or contact support.";
+                errorDiv.style.color = "red";
+                e.target.replaceWith(errorDiv);
+              }}
+            />
+            <p className="text-sm text-gray-500 mt-4">
+              * Disclaimer - The accuracy of Shelfwhiz can only be guaranteed if the underlying data—including inventory quantities, vendor box information, and customer shelf details—is correct. Contact us at{" "}
+              <a href="mailto:info.shelfwhiz@gmail.com" className="text-blue-600 hover:underline">
+                info.shelfwhiz@gmail.com
+              </a>{" "}
+              for questions or other inquiries.
+            </p>
           </div>
         </div>
       </section>

@@ -15,34 +15,7 @@ export default function DocumentsPage() {
           to run your next setup, changeovers, and expansions.
         </p>
 
-        <div className="bg-blue-50 p-12 rounded-xl shadow-lg border border-blue-200" style={{ paddingBottom: '40px' }}>
-          <h2 className="text-3xl font-bold text-blue-800 mb-4">Layout Example</h2>
-          <p className="text-lg text-gray-700 mb-6">
-            Below is an example of a ShelfWhiz™ layout. Our system orgranizes every SKU on every shelf into a Simplified Setup. 
-          </p>
-          <img
-            src="/documents/Layout Example.bmp"
-            width="100%"
-            height="800px"
-            style={{ objectFit: 'contain' }}
-            alt="Layout Example"
-            onError={(e) => {
-              const errorDiv = document.createElement("div");
-              errorDiv.textContent = "Error loading image. Please ensure the file exists or contact support.";
-              errorDiv.style.color = "red";
-              e.target.replaceWith(errorDiv);
-            }}
-          />
-          <p className="text-sm text-gray-500 mt-4">
-            * Disclaimer - The accuracy of Shelfwhiz can only be guaranteed if the underlying data—including inventory quantities, vendor box information, and customer shelf details—is correct. Contact us at{" "}
-            <a href="mailto:info.shelfwhiz@gmail.com" className="text-blue-600 hover:underline">
-              info.shelfwhiz@gmail.com
-            </a>{" "}
-            for questions or or other inquiries.
-          </p>
-        </div>
-
-        <div className="bg-blue-50 p-8 rounded-xl shadow-lg border border-blue-200 mb-12 mt-12">
+        <div className="bg-blue-50 p-8 rounded-xl shadow-lg border border-blue-200 mb-12">
           <h2 className="text-3xl font-bold text-blue-800 mb-4">Download Our Guide</h2>
           <p className="text-lg text-gray-700 mb-6">
             Get our detailed Shelf Layout Chart on streamlining warehouse changeovers
