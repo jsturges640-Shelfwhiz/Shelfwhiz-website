@@ -25,7 +25,7 @@ const testimonials = [
     company: "Massachusetts",
     role: "Regional Sales Manger",
     content:
-      "I have been in the sales industry for over 14 years, and during that time I’ve been involved in countless warehouse resets and inventory transitions. One of the most difficult and time-consuming parts has always been getting products organized on the shelves in the correct order. In the past, we would have to lay everything out on the floor first, then handle the parts multiple times before finally getting them on the shelves. Since using the Shelfwhiz program, this process has completely changed. We can now go directly from the pallet to the shelf. I simply provide a few dimensions and details about the customer’s existing and incoming inventory, and the program does the rest — calculating the number of shelves needed, exact spacing, and even providing detailed layouts and stickers for those positions. The Shelfwhiz system has saved us hours of labor and eliminated confusion, while keeping displays consistent and professional. I’m spoiled now, and cannot imagine doing these jobs the old way.",
+      "I have been in the sales industry for over 14 years, and during that time I’ve been involved in countless warehouse resets and inventory transitions. One of the most difficult and time-consuming parts has always been getting products organized on the shelves in the correct order. In the past, we would have to lay everything out on the floor first, then handle the parts multiple times before finally getting them on the shelves. Since using the Shelfwhiz program, this process has completely changed. We can now go directly from the pallet to the shelf. I simply provide a few dimensions and details about the customer’s existing and incoming inventory, and the program does the rest — calculating the number of shelves needed, exact spacing, and even providing detailed layouts and stickers for those positions. The ShelfWhiz system has saved us hours of labor and eliminated confusion, while keeping displays consistent and professional. I’m spoiled now, and cannot imagine doing these jobs the old way.",
     rating: 5,
     image: "/professional-woman-inventory-specialist.jpg",
   },
@@ -35,7 +35,7 @@ const testimonials = [
     company: "Rancho Cucamonga, CA",
     role: "Regional Sales Manager",
     content:
-      "Since August 2024, I’ve relied on the Shelfwhiz shelf layout program for warehouse product set-ups, and by October 2025, it’s become indispensable. Previously, my team offloaded products from pallets onto the warehouse floor in numerical sequence—a process that was unproductive, time-consuming, space-intensive, and physically taxing. When I first heard about Shelfwhiz, I was skeptical it would work. However, after placing stickers on shelves to guide product placement, I was amazed at how it streamlined the process. Products went straight from pallets to shelves, saving significant time. I’ve used it at multiple warehouses, including two setups in San Marcos, California, where employees remarked on my ability to set up multiple pallets in just a few hours, recalling my prior success with the system. Shelfwhiz has transformed my warehouse setup experience into a highly efficient and productive process.",
+      "Since August 2024, I’ve relied on the ShelfWhiz shelf layout program for warehouse product set-ups, and by October 2025, it’s become indispensable. Previously, my team offloaded products from pallets onto the warehouse floor in numerical sequence—a process that was unproductive, time-consuming, space-intensive, and physically taxing. When I first heard about ShelfWhiz, I was skeptical it would work. However, after placing stickers on shelves to guide product placement, I was amazed at how it streamlined the process. Products went straight from pallets to shelves, saving significant time. I’ve used it at multiple warehouses, including two setups in San Marcos, California, where employees remarked on my ability to set up multiple pallets in just a few hours, recalling my prior success with the system. ShelfWhiz has transformed my warehouse setup experience into a highly efficient and productive process.",
     rating: 5,
     image: "/professional-man-logistics-director.jpg",
   },
@@ -45,7 +45,7 @@ const testimonials = [
     company: "Dallas, TX",
     role: "Director, Stratigic Accounts",
     content:
-      "Shelfwhiz Mapping program revolutionizes inventory execution. By streamlining the process and eliminating unnecessary product movement, it delivers unmatched efficiency and cost savings.",
+      "ShelfWhiz Mapping program revolutionizes inventory execution. By streamlining the process and eliminating unnecessary product movement, it delivers unmatched efficiency and cost savings.",
     rating: 5,
     image: "/professional-man-warehouse-manager.jpg",
   },

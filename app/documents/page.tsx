@@ -11,7 +11,7 @@ export default function DocumentsPage() {
           ShelfWhiz Resources
         </h1>
         <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-          Download our shelf layout chart to see exactly what information Shelfwhiz™ needs
+          Download our shelf layout chart to see exactly what information ShelfWhiz™ needs
           to run your next setup, changeovers, and expansions.
         </p>
 

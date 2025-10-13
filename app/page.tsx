@@ -203,7 +203,7 @@ export default function HomePage() {
               }}
             />
             <p className="text-sm text-gray-500 mt-4">
-              * Disclaimer - The accuracy of Shelfwhiz can only be guaranteed if the underlying data—including inventory quantities, vendor box information, and customer shelf details—is correct. Contact us at{" "}
+              * Disclaimer - The accuracy of ShelfWhiz can only be guaranteed if the underlying data—including inventory quantities, vendor box information, and customer shelf details—is correct. Contact us at{" "}
               <a href="mailto:info.shelfwhiz@gmail.com" className="text-blue-600 hover:underline">
                 info.shelfwhiz@gmail.com
               </a>{" "}
