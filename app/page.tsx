@@ -90,7 +90,7 @@ export default function HomePage() {
             </div>
             <div className="animate-fade-in-left">
               <Image
-                src="https://imgur.com/a/WmVeXo8.png"
+                src="https://imgur.com/pfb6hqB"
                 alt="ShelfWhiz Logo"
                 width={500}
                 height={500}
