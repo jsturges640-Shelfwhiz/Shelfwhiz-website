@@ -89,22 +89,156 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="animate-fade-in-left">
-              {/* ✅ Updated image to use local file */}
               <Image
-                src="/logo.jpg"
+                src="/logo.jpg" // ← NEW LOGO IN PUBLIC FOLDER
                 alt="ShelfWhiz Logo"
                 width={500}
                 height={500}
-                priority
-                unoptimized
                 className="rounded-xl shadow-xl w-full"
+                priority
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ... the rest of your page remains unchanged ... */}
+      {/* Features Section */}
+      <section id="features" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">How ShelfWhiz Helps You</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">
+              Pre-planned SKU placement means your warehouse setups, reconfigurations, and expansions happen smoothly
+              and quickly
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in-up animation-delay-100">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Clock />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Accelerated Setups</h3>
+              <p className="text-gray-600">
+                Streamline your setups, maximize efficiency, minimize effort, while significantly reducing the disruption for you and your customers.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in-up animation-delay-200">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Users />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Reduce Manpower</h3>
+              <p className="text-gray-600">
+                Our system requires fewer personnel and achieve better results than traditional methods.
+              </p>
+            </div>
+            <div className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1 animate-fade-in-up animation-delay-300">
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                <Box />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-3">Smart Product Placement</h3>
+              <p className="text-gray-600">
+                Total skid-to-shelf product intelligence: the ultimate operational breakthrough. As we like to call it Simplified Setups!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section id="gallery" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">ShelfWhiz in Action</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">
+              Transform your shelf dimensions, vendor box data, and inventory into a precise, actionable layout with ShelfWhiz
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in-up">
+              <Image
+                src="/modern-warehouse-with-organized-shelving-systems.jpg"
+                alt="ShelfWhiz solution"
+                width={600}
+                height={384}
+                className="w-full h-96 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in-up animation-delay-100">
+              <Image
+                src="/Screenshot.png"
+                alt="ShelfWhiz solution"
+                width={600}
+                height={384}
+                className="w-full h-96 object-cover"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in-up animation-delay-200">
+              <Image
+                src="/Last Pic.jpg"
+                alt="ShelfWhiz solution"
+                width={600}
+                height={384}
+                className="w-full h-96 object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Layout Example */}
+          <div className="mt-12 bg-blue-50 p-12 rounded-xl shadow-lg border border-blue-200" style={{ paddingBottom: '40px' }}>
+            <div className="text-center">
+              <h2 className="text-3xl font-bold text-blue-800 mb-4">Layout Example</h2>
+            </div>
+            <p className="text-lg text-gray-700 mb-6">
+              Below is an example of a ShelfWhiz layout. Our system organizes every SKU on every shelf into a Simplified Setup.
+            </p>
+            <Image
+              src="/documents/Layout Example.bmp"
+              alt="Layout Example"
+              width={1200}
+              height={800}
+              className="w-full h-auto object-contain"
+            />
+            <p className="text-sm text-gray-500 mt-4">
+              * Disclaimer - The accuracy of ShelfWhiz can only be guaranteed if the underlying data—including inventory quantities, vendor box information, and customer shelf details—is correct. Contact us at{" "}
+              <a href="mailto:info.shelfwhiz@gmail.com" className="text-blue-600 hover:underline">
+                info.shelfwhiz@gmail.com
+              </a>{" "}
+              for questions or other inquiries.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in-up">
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto text-pretty">
+              To unlock faster warehouse setups — Contact us to find out how ShelfWhiz can streamline your next changeover or store setup.
+            </p>
+          </div>
+          <div className="max-w-2xl mx-auto bg-gray-50 rounded-xl shadow-md overflow-hidden p-8 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-in-up">
+            <div className="text-center">
+              <div className="bg-blue-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Mail />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">For Information</h3>
+              <p className="text-gray-600 mb-6 flex items-center justify-center">
+                <Mail className="mr-2" /> info.shelfwhiz@gmail.com
+              </p>
+              <div className="mt-6">
+                <Link
+                  href="mailto:info.shelfwhiz@gmail.com"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition inline-flex items-center hover:scale-105 transform"
+                >
+                  Email Us <Send />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
