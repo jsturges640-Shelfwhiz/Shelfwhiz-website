@@ -87,10 +87,10 @@ const testimonials = [
   },
   {
     id: 8,
-    name: "Scott A",
-    company: "Portland,OR",
+    name: "Scott Austin",
+    company: "NAW",
     role: "Director of Sales",
-    content: "Makes easy work out of Complex Changeovers",
+    content: ""As a factory rep, I’ve worked with countless distribution centers, and the shelf mapping service has consistently made new product placement faster, easier, and more efficient. John delivers clear, well-structured layouts that eliminate confusion and ensure parts are slotted exactly where they need to be. This not only speeds up the process of putting parts on the shelf but also helps maintain flow-through accuracy and minimizes disruption to existing inventory. It’s a huge win for both our customers and our teams." ",
     rating: 5,
     image: "/professional-placeholder.jpg",
   },
