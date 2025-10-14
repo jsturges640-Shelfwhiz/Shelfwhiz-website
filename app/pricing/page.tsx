@@ -23,7 +23,7 @@ export default function PricingPage() {
             Get a Custom Quote
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            ShelfWhiz will layout the entire line by SKU, and shelf, send a detailed file along with our Whizset™ label deck. We can also print & ship the labels if required at an additional cost.
+            ShelfWhiz will layout the entire line by SKU, and shelf, send a detailed file along with our Whizset label deck. We can also print & ship the labels if required at an additional cost.
           </p>
           <a
             href="mailto:info.shelfwhiz@gmail.com?subject=Price%20Quote%20Request"
