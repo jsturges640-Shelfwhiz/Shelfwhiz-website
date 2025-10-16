@@ -81,7 +81,7 @@ const testimonials = [
     name: "Doug D",
     company: "Lincoln, CA",
     role: "Store Manager",
-    content: "This system absolutely makes changeovers go so much faster and smoother.  It eliminates the need to touch the product multiple times",
+    content: "This system absolutely makes changeovers go much faster and smoother.  It eliminates the need to touch the product multiple times",
     rating: 5,
     image: "/professional-placeholder.jpg",
   },
