@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -20,12 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-        />
+        {/* Required viewport meta for responsive behavior */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={inter.className} style={{ margin: 0, padding: 0 }}>
+        {/* ===== Navbar (shared across all pages) ===== */}
         <nav
           className="bg-white shadow-md fixed w-full z-20 top-0"
           style={{
@@ -39,6 +39,7 @@ export default function RootLayout({
                 Shelf<span className="text-gray-800">Whiz</span>
               </span>
             </Link>
+
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-8 w-full sm:w-auto ml-0 sm:ml-8">
               <Link
                 href="/#features"
@@ -46,24 +47,28 @@ export default function RootLayout({
               >
                 Features
               </Link>
+
               <Link
                 href="/pricing"
                 className="text-gray-700 hover:text-blue-600 transition py-1"
               >
                 Pricing
               </Link>
+
               <Link
                 href="/testimonials"
                 className="text-gray-700 hover:text-blue-600 transition py-1"
               >
                 Testimonials
               </Link>
+
               <Link
                 href="/documents"
                 className="text-gray-700 hover:text-blue-600 transition py-1"
               >
                 Resources
               </Link>
+
               <Link
                 href="/#contact"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition text-center md:w-auto w-full"
@@ -73,15 +78,24 @@ export default function RootLayout({
             </div>
           </div>
         </nav>
+
+        {/* Add top padding so page content sits below fixed navbar */}
         <main
-          className="pt-48 pb-20 px-4 sm:px-6 lg:px-8"
-          style={{
-            paddingTop: "calc(12rem + env(safe-area-inset-top, 80px))",
-          }}
+          className="pt-28 pb-20 px-4 sm:px-6 lg:px-8"
+          style={{ paddingTop: "calc(6rem + env(safe-area-inset-top, 20px))" }}
         >
           {children}
         </main>
+
         <footer className="bg-gray-800 text-white py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto text-center">
             <p className="text-gray-400">Streamlining Changeovers Since 2021</p>
             <p className="text-gray-400 text-sm mt-2">
+              &copy; {new Date().getFullYear()} ShelfWhiz. All rights reserved.
+            </p>
+          </div>
+        </footer>
+      </body>
+    </html>
+  );
+}
