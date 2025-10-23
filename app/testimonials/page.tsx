@@ -25,7 +25,7 @@ const testimonials = [
     company: "Massachusetts",
     role: "Regional Sales Manger",
     content:
-      "I have been in the sales industry for over 14 years, and during that time I’ve been involved in countless warehouse resets and inventory transitions. One of the most difficult and time-consuming parts has always been getting products organized on the shelves in the correct order. In the past, we would have to lay everything out on the floor first, then handle the parts multiple times before finally getting them on the shelves. Since using the Shelfwhiz program, this process has completely changed. We can now go directly from the pallet to the shelf. I simply provide a few dimensions and details about the customer’s existing and incoming inventory, and the program does the rest — calculating the number of shelves needed, exact spacing, and even providing detailed layouts and stickers for those positions. The ShelfWhiz system has saved us hours of labor and eliminated confusion, while keeping displays consistent and professional. I’m spoiled now, and cannot imagine doing these jobs the old way.",
+      "I have been in the sales industry for over 14 years, and during that time I’ve been involved in countless warehouse resets and inventory transitions. One of the most difficult and time-consuming parts has always been getting products organized on the shelves in the correct order. In the past, we would have to lay everything out on the floor first, then handle the parts multiple times before finally getting them on the shelves. Since using the ShelfWhiz program, this process has completely changed. We can now go directly from the pallet to the shelf. I simply provide a few dimensions and details about the customer’s existing and incoming inventory, and the program does the rest — calculating the number of shelves needed, exact spacing, and even providing detailed layouts and stickers for those positions. The ShelfWhiz system has saved us hours of labor and eliminated confusion, while keeping displays consistent and professional. I’m spoiled now, and cannot imagine doing these jobs the old way.",
     rating: 5,
     image: "/professional-woman-inventory-specialist.jpg",
   },
@@ -72,7 +72,7 @@ const testimonials = [
     name: "Todd S",
     company: "Buffalo, NY",
     role: "Divisional Sales Mgr",
-    content: "It's a Real Game Changer. I've done a ton of changeovers, none as easy as when I used Shelfwhiz",
+    content: "It's a Real Game Changer. I've done a ton of changeovers, none as easy as when I used ShelfWhiz",
     rating: 5,
     image: "/professional-placeholder.jpg",
   },
