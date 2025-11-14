@@ -78,10 +78,10 @@ const testimonials = [
   },
   {
     id: 7,
-    name: "Doug D",
-    company: "Lincoln, CA",
-    role: "Store Manager",
-    content: "This system absolutely makes changeovers go much faster and smoother.  It eliminates the need to touch the product multiple times",
+    name: "Eddie F",
+    company: "Fresno, CA",
+    role: "Regional Sales Manager",
+    content: "Its efficiency has really helped save time and less touches per unit in the field. No matter what the product is, if we have the box and shelf dimensions, we can know exactly what SKU goes on each shelf. The way it can be manipulated in matters of a few clicks is amazing and the reactions we get from the customers on a timely, efficient changeover is the best"
     rating: 5,
     image: "/professional-placeholder.jpg",
   },
